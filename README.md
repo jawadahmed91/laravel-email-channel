@@ -1,2 +1,10 @@
-# laravel-email-channel
-Laravel email channel examples using Mailables, notifications, queues, templates, delivery events, and testing.
+# Laravel Email Channel
+
+Laravel 13 patterns for queued mail notifications, Markdown templates, per-message metadata, queue selection, retries, and testing with `Notification::fake()`.
+
+`WelcomeNotification` implements `ShouldQueue`, uses the `emails` queue, and builds a standard `MailMessage` without embedding credentials or transport settings.
+
+```bash
+composer install
+composer test
+```
